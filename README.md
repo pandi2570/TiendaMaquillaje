@@ -133,6 +133,7 @@ después se enviará al cliente.
 **1.4 DESARROLLO**
 
 Dentro del proyecto, podemos apreciar como principal diagrama, cada una de las partes que se van
+
 a presentar dentro de la estructura del programa:
 
 3
