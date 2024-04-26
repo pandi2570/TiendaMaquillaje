@@ -11,6 +11,9 @@ Ingeniería en Sistemas Computacionales
 Grupo: 8S2 Programación Web PHP con MVC
 
 21-marzo, 2024
+<hr>
+
+</hr>
 
 **1.1 INDICE.**
 
@@ -34,9 +37,9 @@ Grupo: 8S2 Programación Web PHP con MVC
 
 [**1.6**](#br11)[** ](#br11)[REFERENCIAS**](#br11)[** ](#br11)[...........................................................................................................................................................11](#br11)
 
-1
+<hr>
 
-
+</hr>
 
 <a name="br2"></a> 
 
@@ -61,6 +64,10 @@ Uno de los objetivos principales de este proyecto es conocer más sobre la estru
 tomando como referencia, especificar de manera clara el contexto que se va realizando cada una de
 
 las partes del código, generando así el Modelo-Vista-Controlador.
+
+<hr>
+
+</hr>
 
 **1.3 INTRODUCCIÓN**
 
@@ -91,10 +98,6 @@ usuario. Gestiona directamente los datos, garantiza su integridad y accesibilida
 de aplicación. Si el estado de estos datos, el modelo generalmente debe notificar a la vista para que
 
 así pueda ser cambiado.
-
-2
-
-
 
 <a name="br3"></a> 
 
@@ -130,14 +133,18 @@ particularidades de PHP es que el código donde se integre se ejecutará del lad
 
 después se enviará al cliente.
 
+<hr>
+
+</hr>
+
 **1.4 DESARROLLO**
 
 Dentro del proyecto, podemos apreciar como principal diagrama, cada una de las partes que se van
 
 a presentar dentro de la estructura del programa:
 
-3
 
+![MVC](https://github.com/pandi2570/TiendaMaquillaje/assets/168136025/69d0db4a-5f3a-4ecd-82e0-41f881a9ef69)
 
 
 <a name="br4"></a> 
@@ -156,6 +163,9 @@ donde tenemos un **input** de tipo texto, otro **input** de tipo password, dentr
 
 observamos que se manda a llamar al controlador, y se utilizan diseños de CSS.
 
+![vista](https://github.com/pandi2570/TiendaMaquillaje/assets/168136025/7c9a6f13-b77c-4744-bb2c-6d97783ad273)
+
+
 Como se a mencionado utilizamos diseños CSS que funcionan como:
 
 **.contenedor:** que en su totalidad es el contorno donde se encuentra el login para ingresar a la
@@ -170,7 +180,8 @@ pixeles.
 
 que sea Cursiva y de igual manera se le da el tamaño en pixeles.
 
-4
+
+![contenedor](https://github.com/pandi2570/TiendaMaquillaje/assets/168136025/e391a749-f618-45f9-8e0c-2df980b0b03e)
 
 
 
@@ -180,8 +191,9 @@ Después de generar la parte del código “**Login”** tenemos el siguiente di
 
 de manera simple y entendible.
 
-5
 
+
+<img width="405" alt="login" src="https://github.com/pandi2570/TiendaMaquillaje/assets/168136025/f24550a4-a91c-4553-8c81-6f345c737aee">
 
 
 <a name="br6"></a> 
@@ -192,12 +204,13 @@ la aplicación web y por quienes a sido elaborada, teniendo en cuenta también e
 
 ha sido denominado “supershop cosmetic”
 
+![supershop](https://github.com/pandi2570/TiendaMaquillaje/assets/168136025/0c7955c4-b41f-4ebd-aea1-ec2cfe0c99de)
+
 De está manera podemos encontrar nuestra vista de esta manera, agregando al código una serie de
 
 menú para entrar a las demás vistas.
 
-6
-
+<img width="404" alt="vistass" src="https://github.com/pandi2570/TiendaMaquillaje/assets/168136025/5456f840-a458-4480-9b7c-7ae482caaaae">
 
 
 <a name="br7"></a> 
@@ -220,17 +233,20 @@ también se van almacenando en nuestra base de datos, teniendo una segunda tabla
 
 **Detalle de venta** donde se mantiene que es lo que compró el usuario.
 
+![modelo](https://github.com/pandi2570/TiendaMaquillaje/assets/168136025/31c21e31-1df1-4612-aee8-4875f40fbaf2)
+
+
 Dentro del siguiente lapso de código podemos apreciar como se manda a llamar la base de datos,
 
 donde se da la evaluación si el usuario y la contraseña son verdaderas y así mismo dejar ingresar al
 
 usuario a la siguiente parte de la vista.
 
+![parte vista](https://github.com/pandi2570/TiendaMaquillaje/assets/168136025/70896448-d2d3-41a5-a761-9cd2f25628fb)
+
 Aquí podemos observar la creación de la base de datos, la cual también es perteneciente al modelo.
 
-7
-
-
+![sig](https://github.com/pandi2570/TiendaMaquillaje/assets/168136025/d5d36e7b-5472-41f8-a325-3b172d9b1d3a)
 
 <a name="br8"></a> 
 
@@ -258,13 +274,9 @@ esto es porque no se tiene contraseña en el usuario **“”.**
 
 **$bd =** aquí tendrá que agregar el nombre de la base de datos en este código se tiene como **“Leslei”.**
 
-**$conexion =** lo que realiza esta línea de código es que con los datos ya proporcionados se extrae la
+**$conexion =** lo que realiza esta línea de código es que con los datos ya proporcionados se extrae la base de datos.
 
-base de datos.
-
-8
-
-
+![san](https://github.com/pandi2570/TiendaMaquillaje/assets/168136025/52a359ae-5ab1-4952-93ee-69e6147c8c92)
 
 <a name="br9"></a> 
 
@@ -280,9 +292,7 @@ visualizar cada uno de los productos. Con esta línea de código pueden llamarse
 
 cualquier carpeta, para que así nuestro Modelo-Vista-Controlador sea de manera más eficiente.
 
-9
-
-
+![eficiente](https://github.com/pandi2570/TiendaMaquillaje/assets/168136025/76514694-ad19-4965-96e3-487f71b3d589)
 
 <a name="br10"></a> 
 
@@ -290,15 +300,22 @@ Aquí se puede mostrar como con esta línea de código se puede integrar en la s
 
 de datos para así poder agregar productos, ser eliminados e incluso agregar imágenes.
 
+<img width="442" alt="guardar" src="https://github.com/pandi2570/TiendaMaquillaje/assets/168136025/1c81a9cb-694d-43e5-a803-d54f1693a8b4">
+
+
 De esta manera, se va integrando nuestra carpeta CONTROLADOR, donde podemos encontrar login,
 
 delete, exit, mail, productos.
 
-10
+![products](https://github.com/pandi2570/TiendaMaquillaje/assets/168136025/ec4ec588-2baa-4747-a16b-8446ea4ca65a)
 
-
+![ima](https://github.com/pandi2570/TiendaMaquillaje/assets/168136025/73417b9b-9c57-42c2-b0a7-a063d42b6f6f)
 
 <a name="br11"></a> 
+
+<hr>
+
+</hr>
 
 **1.5 CONCLUSIONES**
 
@@ -317,6 +334,10 @@ que se le es presentada al usuario, y dándole mayor capacidad al programador de
 alguno de los componentes que se encuentran dentro de los códigos sin la necesidad de afectar los
 
 demás componentes.
+
+<hr>
+
+</hr>
 
 **1.6 REFERENCIAS**
 
