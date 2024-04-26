@@ -1,0 +1,14 @@
+@font-face {
+    font-family: 'cursiva';
+    src: url('../fonts/Ananda\ Personal\ Use.ttf');
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.cursiva{
+    font-family: 'cursiva';
+}
