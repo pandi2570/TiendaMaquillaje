@@ -1,57 +1,21 @@
-<!DOCTYPE html>
-<html lang="es">
+<?php
+require_once "controller/inicio.php";
+error_reporting(0);
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LeslieMakeUp</title>
-    <link rel="icon" href="src/icons/logo.jpg">
-    <link rel="stylesheet" href="src/libs/bootstrap_5/css/bootstrap.min.css">
-    <link rel="stylesheet" href="src/libs/fontawesome/css/all.min.css">
-    <link rel="stylesheet" href="src/css/general.css">
-    <link rel="stylesheet" href="src/css/login.css">
-</head>
+$controller = new InicioController;
+$home = "http://localhost/leslie/index.php/";
 
-<body>
+$ruta = str_replace($home, "", $_SERVER["REQUEST_URI"]);
+// monitor path
+//echo $ruta;
+//echo "<br>";
+//echo $_SERVER["REQUEST_URI"];
+//echo "<br>";
 
-    <div class="contenedor">
-        <form class="form" action="controller/login.php" method="post">
-            <h1 class="cursiva text-center">
-                Login
-            </h1>
-            <input type="text" placeholder="Usuario:" class="form-control mt-5 mb-5" name="user" required>
-            <input type="password" placeholder="Contraseña:" class="form-control mt-5 mb-5" name="pass" required>
-            <br>
-            <center>
-                <button type="submit" class="btn btn-primary cursiva mb-4">
-                    Ingresar
-                </button>
-            </center>
-        </form>
-    </div>
+//Creo el array de ruta (filtrando los vacíos)
+$array_ruta = array_filter(explode("/", $ruta));
+//var_dump($array_ruta);
+// echo "<br>";
 
-
-    <script src="src/libs/jquery.js"></script>
-    <script src="src/libs/sweetalert.js"></script>
-    <script src="src/libs/bootstrap_5/js/bootstrap.min.js"></script>
-    <script src="src/libs/fontawesome/js/all.min.js"></script>
-    <script>
-        $(function() {
-            response = "<?php if (isset($_GET['resp'])) {
-                            echo $_GET['resp'];
-                        } else echo 0; ?>"
-
-            switch (response) {
-                case "2":
-                    alert("Usuario/contraseña erroneos");
-                    break;
-                case "-1":
-                    alert("Error de Conexión, intentalo de nuevo mas tade!");
-                    break;
-            }
-        });
-    </script>
-
-</body>
-
-</html>
+//Llamo al método por defecto del controlador
+$controller->index();
